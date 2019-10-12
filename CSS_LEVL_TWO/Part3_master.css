@@ -1,0 +1,33 @@
+
+#text{
+  font-family: 'GreatVibesRegular';
+   font-weight: normal;
+   font-style: normal;
+   margin: auto;
+   text-align: center;
+}
+
+table tr td {
+    height: 200px;
+    padding: 100px;
+    border: 6px solid white;
+}
+table tr #td1{
+  background-color: #00AD0E;
+}
+table tr #td2{
+  background-color: #04773B;
+}
+table tr #td3{
+  background-color: #036016;
+}
+table tr #td4{
+  background-color: #03440C;
+}
+table tr #td5{
+  background-color: #000000;
+}
+table{
+  margin: auto;
+  align-content: center;
+}

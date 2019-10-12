@@ -1,0 +1,19 @@
+/* select tag {
+  property; value
+} */
+
+h1{
+  color: blue;
+}
+
+li{
+  color: rgb(255,97,100);
+}
+
+p{
+  color: #0895a8
+}
+
+h4{
+  color: rgba(255,97,100,0.5);
+}
