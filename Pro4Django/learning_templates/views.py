@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 
 def index(reqest):
-    return render(reqest, 'learning_templates/index.html')
+    context_dict = {'text': 'hello world', 'number': 1000}
+    return render(reqest, 'learning_templates/index.html', context_dict)
 
 
 def other(reqest):
