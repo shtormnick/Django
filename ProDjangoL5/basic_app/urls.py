@@ -1,4 +1,8 @@
 from django.urls import path
+from basic_app import views
+
+
+app_name = 'basic_app'
 
 
 def trigger_error(request):
@@ -7,4 +11,6 @@ def trigger_error(request):
 
 urlpatterns = [
     path('sentry-debug/', trigger_error),
+    path('register/', views.register, name='register'),
+    
 ]
