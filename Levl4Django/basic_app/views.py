@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .import forms
 from django.views.decorators.csrf import csrf_exempt
+
 # Create your views here.
 
 
@@ -20,5 +21,12 @@ def register(request):
             print("Nme " + form.cleaned_data['name'])
             print("Email " + form.cleaned_data['email'])
             print("Text " + form.cleaned_data['text'])
-
     return render(request, 'basic_app/forms_page.html', {'form': form})
+
+
+# Собственный способ отлавливать ботов
+# def clean_botcatcher(self):
+#     botcathcer = self.cleaned_data['botcathcer']
+#     if len(botcathcer) > 0:
+#         raise forms.ValidationEror("GOTCHA BOT!")
+#     return botcathcer
