@@ -4,7 +4,8 @@ from appTwo.forms import NewUserForm
 
 
 def index(request):
-    return render(request, 'appTwo/index.html')
+    context_dict = {'text': 'hello world', 'number': 110}
+    return render(request, 'appTwo/index.html', context_dict)
 
 
 def users(request):
