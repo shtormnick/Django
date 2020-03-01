@@ -1,0 +1,4 @@
+DjangoEnvL5/
+.vscode
+.pytest_cache
+pytest/
